@@ -147,15 +147,55 @@ class Program
 <ol>
 <li>Mas onde está a instância da classe Console?</li>
 <li>Como podemos acessar os métodos WriteLine e ReadLine sem criar uma instância da classe Console?</li>
-</ol>
+</ol> </br>
 
 <p>A resposta é que, a palavra-chave <strong>static</strong> faz com que os métodos da classe Console estejam associados à classe e <strong>não</strong> a uma instância particular dessa classe.</p>
 
 <h3>Problemas com Métodos Estáticos</h3>
 
-<ul>
+<ul></br>
 <li><strong>Dificultam Testes:</strong> Métodos estáticos não podem ser substituídos ou "mockados" em testes unitários, dificultando o teste isolado e o uso de injeção de dependências.</li>
 <li><strong>Aumentam o Acoplamento:</strong> Código que depende de métodos estáticos fica fortemente acoplado à classe, limitando a extensibilidade e reduzindo a flexibilidade para mudanças.</li>
 <li><strong>Falta de Estado e Contexto:</strong> Métodos estáticos não acessam o estado de instância, exigindo que todas as informações sejam passadas via parâmetros, o que pode gerar código mais verboso.</li>
 <li><strong>Problemas de Concorrência:</strong> Métodos estáticos compartilham o mesmo estado entre todas as chamadas, tornando-os potencialmente inseguros para acesso concorrente.</li>
 </ul>
+
+
+## Métodos de extensão
+
+São definidos como estáticos, mas não são chamamados, usando a sintaxe do **método de instância**.
+
+Seu primeiro parâmetro especifica em que tipo o método opera e o perâmetro é precedido pelo modificador **this**
+
+Estarão no escopo somente quando você importar o **namespace** para o seu código fonte.
+
+
+```csharp
+public static string metodoExtensao(this string valor)
+{
+    //
+}
+```
+
+### Implementação de um método de extensão
+
+```csharp
+//Classe estática
+public static class MetodoExtensao
+{
+    //Método estático
+    //Primeiro parâmetro do método define o tipo que estamos estendendo - string
+    //Deve estar procedido de this
+    public static string CaixaAltaPrimeiraLetra(this string valor)
+    {
+        if (valor.Length > 0)
+        {
+            char[] array = valor.ToCharArray();
+            array[0] = char.ToUpper(array[0]);
+            return new string(array);
+        }
+
+        return valor;
+    }
+}
+```
