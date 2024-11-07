@@ -144,6 +144,5 @@ public class Program
 ```
 
 
-
 10- Qual o conceito de herança? Dê um exemplo
 Herança é um conceito, que se esclarece pelo proprio nome. mas abstraindo o conceito, temos uma ou mais classes pai, que possuem métodos, propriedades,e objetos que podem ser herdadas pelas classes filhas. Se eu definir a classe veiculo, tudo oque for public, ou internal, será reaproveitado pelas classes filhas(o internal se limita ao assembly local.)
