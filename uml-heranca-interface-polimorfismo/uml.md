@@ -61,3 +61,49 @@ Exemplo de representação de uma classe em UML:
 ---
 
 O uso da UML, e especialmente do Diagrama de Classes, é fundamental para projetar sistemas robustos e organizados, facilitando o entendimento e o desenvolvimento colaborativo.
+
+
+
+---
+
+## Notação UML - Diagrama de Classes
+
+Na UML, a representação de uma classe usa um retângulo dividido em três partes: nome da classe, atributos e métodos.
+
+### Classe: Pessoa
+
+## Notação UML - Diagrama de Classes
+
+Na UML, a representação de uma classe usa um retângulo dividido em três partes: **nome da classe**, **atributos da classe** e **métodos da classe**.
+
+```text
++-----------------------------+          Nome da classe
+|          Pessoa             |          +----------------+
++-----------------------------+          | "Pessoa"       |
+| dataNascimento : DateTime   |  <----   Atributos da classe
+| Nome           : string     |          +----------------+
+| Idade          : int        |
+| Sexo           : string     |
++-----------------------------+          Métodos da classe
+| IdentificarPessoa()         |  <----   +----------------+
+| Pessoa()                    |          | "Métodos"      |
++-----------------------------+
+
+Nome da Classe: Pessoa
+
+Representa o título da classe no diagrama.
+
+Atributos da Classe:
+dataNascimento : DateTime
+
+Nome : string
+
+Idade : int
+
+Sexo : string
+
+Métodos da Classe:
+
+IdentificarPessoa()
+
+Pessoa()
