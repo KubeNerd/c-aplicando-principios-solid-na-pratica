@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SOLID_LSP3.Passaro">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAACEAAAA=</HashCode>
+      <FileName>Passaro.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLID_LSP3.Pato">
+    <Position X="5.5" Y="3.75" Width="1.5" />
+    <InheritanceLine Type="SOLID_LSP3.PassarosVoadores" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.375" Y="2.537" />
+        <Point X="6.375" Y="3.626" />
+        <Point X="6.375" Y="3.626" />
+        <Point X="6.375" Y="3.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIIACAAAAA=</HashCode>
+      <FileName>Pato.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLID_LSP3.PassarosVoadores">
+    <Position X="5.5" Y="1" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>PassarosVoadores.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOLID_LSP3.Pinguim">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAACAAAAA=</HashCode>
+      <FileName>Pinguim.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="10" />
+</ClassDiagram>
